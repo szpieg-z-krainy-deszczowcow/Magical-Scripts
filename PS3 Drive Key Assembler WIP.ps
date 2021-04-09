@@ -1,8 +1,0 @@
-$DesktopPath = [Environment]::GetFolderPath("Desktop")
-
-//jak odczytaæ to jebane gówno z flasha na PS v1?
-
-Get-Content $DesktopPath\data.temp,eid_root_key.bin -Enc Byte -Read 48 | Set-Content $DesktopPath\drive_key.bin -Enc Byte
-Remove-Item $DesktopPath\data.temp -Force
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
